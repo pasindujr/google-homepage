@@ -1,6 +1,21 @@
 .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    display:block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.google-logo {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+}
+
+.search-bar {
+    position: relative;
+    top: 20px;
+    left: 40px;
 }
