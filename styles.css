@@ -1,97 +1,106 @@
+.body {
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #222;
+}
+
 .heading {
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 100px;
+	display: flex;
+	justify-content: flex-end;
+	padding-bottom: 100px;
 }
 
 .gmail {
-    padding:0 15px
+	padding: 0 15px;
 }
 
 .images {
-    padding:0 15px
+	padding: 0 15px;
 }
 
 .gapps {
-    padding:0 15px
+	padding: 0 15px;
 }
 
 .dp {
-    padding:0 15px
+	padding: 0 15px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-areas: 
-    ". google-logo google-logo ."
-    ". search-bar search-bar ."
-    ". search-button feeling-lucky .";
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .google-logo {
-    grid-area: google-logo;
-    justify-self: center;
+	padding-bottom: 3vh;
 }
 
 .search-bar {
-    grid-area: search-bar;
-    align-self: center;
-    justify-self: center;
+	padding-bottom: 3vh;
 }
 
-.search-button {
-    grid-area: search-button;
-    justify-self: flex-end;
-    padding:0 15px
+.search-buttons {
+	display: flex;
+	justify-content: center;
 }
 
 .feeling-lucky {
-    grid-area: feeling-lucky;
+	padding-left: 2vh;
 }
 
 .footer {
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr 10fr 1fr 1fr 1fr;
-    grid-template-rows: 30px 30px;
-    grid-template-areas: 
-    "srilanka . . . . . . ."
-    "about advertising business how-search-works . privacy terms settings";
+	display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-left {
+    display: flex;
 }
 
 .srilanka {
-    grid-area: srilanka;
+    padding: 0 15px;
 }
 
 .about {
-    grid-area: about;
-
+    padding: 0 15px;
 }
 
 .advertising {
-    grid-area: advertising;
+    padding: 0 15px;
 }
 
 .business {
-    grid-area: business;
+    padding: 0 15px;
 }
 
 .how-search-works {
-    grid-area: how-search-works;
+    padding: 0 15px;
+    
 }
 
 .privacy {
-    grid-area: privacy;
+    padding: 0 15px;
 }
 
 .terms {
-    grid-area: terms;
+    padding: 0 15px;
 }
 
 .settings {
-    grid-area: settings;
+    padding: 0 15px;
+
 }
+
+.footer-bottom-right {
+    display: flex;
+    justify-items: flex-end;
+}
+
