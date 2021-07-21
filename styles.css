@@ -3,6 +3,69 @@ body {
 	height: 100%;
 }
 
+a,
+u {
+	text-decoration: none;
+	color: inherit;
+}
+
+.dp img {
+	height: 32px;
+	width: 32px;
+	background-size: 32px 32px;
+	border-radius: 50%;
+}
+
+.wrapper {
+	position: relative;
+	display: flex;
+	min-width: 100px;
+}
+
+.wrapper input {
+	padding-left: 35px;
+}
+
+.search-icon {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	width: 14px;
+	opacity: 50%;
+}
+
+.mic-icon {
+	position: absolute;
+	top: 13px;
+	right: 16px;
+	width: 20px;
+	cursor: pointer;
+	opacity: 50%;
+}
+
+.search {
+	border: 1px solid rgb(207, 205, 205);
+	border-radius: 20px;
+	height: 39px;
+	width: 560px;
+	padding: 2px 23px 2px 30px;
+	outline: 0;
+	background-color: transparent;
+}
+
+.search:hover,
+.search:focus {
+	box-shadow: 0px 4px 15px -11px rgba(0, 0, 0, 0.78);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+.gapps > button:hover {
+	opacity: 0.85;
+	cursor: pointer;
+}
+
 body {
 	font-size: 14px;
 	font-family: arial, sans-serif;
@@ -15,16 +78,27 @@ body {
 	padding-bottom: 100px;
 }
 
-.gmail {
-	padding: 0 15px;
-}
-
+.gmail,
 .images {
 	padding: 0 15px;
+	line-height: 24px;
+	font-family: arial, sans-serif;
+	font-size: 13px;
 }
 
 .gapps {
 	padding: 0 15px;
+}
+
+.gapps-button {
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+	background-position: -133px -39px;
+	opacity: 0.5;
+	appearance: auto;
+	border: 0;
 }
 
 .dp {
@@ -42,7 +116,7 @@ body {
 }
 
 .search-bar {
-	padding-bottom: 3vh;
+	padding-bottom: 4vh;
 }
 
 .search-buttons {
@@ -50,12 +124,44 @@ body {
 	justify-content: center;
 }
 
+.search-button button,
+.feeling-lucky button {
+	background-color: #f8f9fa;
+	border: 1px solid #f8f9fa;
+	border-radius: 4px;
+	color: #3c4043;
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	margin: 11px 4px;
+	padding: 0 16px;
+	line-height: 27px;
+	height: 36px;
+	min-width: 54px;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+.search-button button:hover,
+.feeling-lucky button:hover {
+	box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+	background-color: #f8f9fa;
+	border: 1px solid #dadce0;
+	color: #202124;
+}
+
+.search-button button:focus,
+.feeling-lucky button:focus {
+	border: 1px solid #4285f4;
+	outline: none;
+}
+
 .feeling-lucky {
 	padding-left: 2vh;
 }
 
 .footer {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	bottom: 0;
 	width: 100%;
