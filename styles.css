@@ -161,7 +161,7 @@ body {
 }
 
 .footer {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -170,8 +170,8 @@ body {
 
 .footer a {
 	padding-right: 30px;
-    font-size: 15px;
-    color: rgba(0,0,0,.54);
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.54);
 }
 
 .footer-bottom {
@@ -179,7 +179,7 @@ body {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding: 5px;
-	border-top: 1px solid #dadce0
+	border-top: 1px solid #dadce0;
 }
 
 .footer-bottom-left {
